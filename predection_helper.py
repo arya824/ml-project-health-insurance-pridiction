@@ -1,12 +1,12 @@
 import pandas as pd
 from joblib import load
 
-model_rest = load(r"artifacts\model_rest.joblib")
-model_young = load(r"artifacts\model_young.joblib")
+model_rest = load(r"artifacts/model_rest.joblib")
+model_young = load(r"artifacts/model_young.joblib")
 
 # These are dictionaries: {"scaler": <sklearn_scaler>, "cols_to_scale": [...]}
-scaler_rest = load(r"artifacts\scaler_rest.joblib")
-scaler_young = load(r"artifacts\scaler_young.joblib")
+scaler_rest = load(r"artifacts/scaler_rest.joblib")
+scaler_young = load(r"artifacts/scaler_young.joblib")
 
 
 def calculate_normalized_risk_score(medical_history: str) -> float:
